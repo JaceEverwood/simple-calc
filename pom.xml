@@ -20,7 +20,7 @@
 	<artifactId>simple-calc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Simple Calc</name>
+	<name>Simple Calculator</name>
 	<description>Does sums and substractions</description>
 
 	<repositories>
@@ -86,8 +86,8 @@
 				<version>2.22.0</version>
 				<configuration>
 					<testSourceDirectory>${basedir}/src/main/test/</testSourceDirectory>
-<!-- 					<testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
- -->					<argLine>
+<!-- 					<testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>  -->
+					<argLine>
 						--illegal-access=permit
 					</argLine>
 				</configuration>
@@ -105,11 +105,11 @@
 			<!-- // Maven Test Plugins -->
 			
 			<!--  SonarQube plugin -->
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.4.0.905</version>
-            </plugin>
+	    <plugin>
+		<groupId>org.sonarsource.scanner.maven</groupId>
+		<artifactId>sonar-maven-plugin</artifactId>
+		<version>3.4.0.905</version>
+	    </plugin>
 			<!--  // SonarQube plugin -->
 			
 		</plugins>
@@ -119,8 +119,8 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<name>USABOS279979L-snapshots</name>
-			<url>http://localhost:8040/artifactory/libs-snapshot</url>
+        		<name>USABOS273162L-snapshots</name>
+        		<url>http://localhost:8081/artifactory/libs-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 
